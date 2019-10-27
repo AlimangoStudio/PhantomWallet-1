@@ -16,3 +16,4 @@ PhantomWallet/www/session
 *.config
 *.walletconfig
 bin/
+*obj*
