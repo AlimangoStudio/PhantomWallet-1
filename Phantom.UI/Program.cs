@@ -10,7 +10,7 @@ namespace Features
         static int Main(string[] args)
         {
             RuntimeManager.DiscoverOrDownloadSuitableQtRuntime();
-            
+
             QQuickStyle.SetStyle("Material");
 
             using (var application = new QGuiApplication(args))
@@ -18,8 +18,8 @@ namespace Features
                 using (var qmlEngine = new QQmlApplicationEngine())
                 {
 
-                    qmlEngine.Load("QML/Main.qml");
-                    
+                    qmlEngine.Load("qml/Main.qml");
+
                     return application.Exec();
                 }
             }
